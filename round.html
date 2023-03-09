@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .circle-container {
+        position: relative;
+        height: 200px;
+        width: 200px;
+      }
+
+      .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .text-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(-90deg);
+      }
+
+      .text {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        transform: rotate(60deg) translateY(-60px);
+      }
+
+      .text:nth-child(2) {
+        transform: rotate(120deg) translateY(-60px);
+      }
+
+      .text:nth-child(3) {
+        transform: rotate(180deg) translateY(-60px);
+      }
+
+      .text:nth-child(4) {
+        transform: rotate(240deg) translateY(-60px);
+      }
+
+      .text:nth-child(5) {
+        transform: rotate(300deg) translateY(-60px);
+      }
+
+      .text:nth-child(6) {
+        transform: rotate(0deg) translateY(-60px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-container">
+      <div class="circle">
+        <div class="text-container">
+          <div class="text">a</div>
+          <div class="text">b</div>
+          <div class="text">c</div>
+          <div class="text">d</div>
+          <div class="text">e</div>
+          <div class="text">r</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
